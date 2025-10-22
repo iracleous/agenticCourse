@@ -1,3 +1,9 @@
+"""
+
+    example2.py
+    Simple Agentic System with Tool Use (DuckDuckGo Search)
+"""
+
 import os
 from typing import TypedDict, Annotated
 from langchain_core.messages import AnyMessage, HumanMessage, ToolMessage

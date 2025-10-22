@@ -1,6 +1,10 @@
-
-
+"""
+Ex6. Agent that can decide to use tools
 # using @tools
+
+"""
+
+
 
 
 import os

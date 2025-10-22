@@ -1,3 +1,8 @@
+"""
+Ex10. Integrating a local LLM (Ollama) with Chroma and Neo4j
+"""
+
+
 import os
 from dotenv import load_dotenv
 from openai import OpenAI

@@ -28,6 +28,9 @@ poetry add chromadb neo4j
 poetry add transformers torch
 
 
+poetry add langchain_huggingface
+
+poetry add pypdf sentence-transformers
 #############################################
 Intro to Generative & Agentic AI
 - Using an LLM in your app

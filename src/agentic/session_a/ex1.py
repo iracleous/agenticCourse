@@ -1,6 +1,7 @@
 """
-Example 2:   RunnableSequence (pipeline) 
-Goal: Demonstrate a simple Runnable Sequential Pipeline using the modern LangChain interface
+Ex1. Simple LangChain pipeline
+Goal: Demonstrate a simple Runnable Sequential Pipeline  (RunnableSequence)
+using the modern LangChain interface
 """
 
 from langchain.prompts import PromptTemplate
@@ -8,13 +9,19 @@ from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
+
+################################################
+import time
+start = time.time()
+################################################
+
 # load environment variables from a .env file
 load_dotenv()
 
 # --- 1️⃣ Initialize the LLM ---
 
 llm = ChatOpenAI(
-    model=os.getenv("OPENAI_MODEL_NAME", "gpt-4-turbo"),
+    model=os.getenv("OPENAI_MODEL_NAME"),
     api_key=os.getenv("OPENAI_API_KEY"),
     base_url=os.getenv("OPENAI_ENDPOINT"),
     temperature=0
@@ -32,3 +39,9 @@ response = chain.invoke({"topic": "Artificial Intelligence in Education"})
 
 # --- 5️⃣ Print the model output ---
 print(response.content)
+
+
+################################################
+end = time.time()
+print(f"Execution time: {end - start:.4f} seconds") 
+################################################

@@ -48,7 +48,8 @@ texts = [chunk.page_content for chunk in chunks]
 
 # 3️⃣ Create embeddings (Hugging Face)
 embedding_model_name = "sentence-transformers/all-MiniLM-L6-v2"
-embedding_vectors = HuggingFaceEmbeddings(model_name=embedding_model_name)
+embedding_vectors = HuggingFaceEmbeddings(
+    model_name=embedding_model_name)
 
 # Compute embeddings
 

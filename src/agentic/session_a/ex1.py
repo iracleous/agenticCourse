@@ -21,9 +21,9 @@ load_dotenv()
 # --- 1️⃣ Initialize the LLM ---
 
 llm = ChatOpenAI(
-    model=os.getenv("OPENAI_MODEL_NAME"),
-    api_key=os.getenv("OPENAI_API_KEY"),
-    base_url=os.getenv("OPENAI_ENDPOINT"),
+    model=os.getenv("OPENAI_MODEL_AZ"),
+    api_key=os.getenv("OPENAI_API_KEY_AZ"),
+  #  base_url=os.getenv("OPENAI_ENDPOINT"),
     temperature=0
 )
 # --- 2️⃣ Define a PromptTemplate ---
